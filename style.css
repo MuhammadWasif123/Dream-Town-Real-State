@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap');
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+/* Html */
+html {
+
+    font-size: 62.5%;
+    /* 1rem=10px */
+
+
+}
+
+
+/* Body */
+body {
+
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 1.7rem;
+
+}
+
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    height: 8.6vh;
+}
+
+
+/* Navbar List */
+#navbar ul {
+    display: flex;
+    position: relative;
+    right: 3.7rem;
+
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0 0.35rem;
+
+}
+
+#navbar ul li a {
+
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    /* color:white; */
+    display: block;
+    color: white;
+    padding: 1rem 1.1rem;
+    margin: 0.5rem;
+
+}
+
+#navbar ul li a:hover {
+
+    color: black;
+    background-color: #93CB52;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid rgb(5, 5, 5);
+
+}
+
+/* Navbar Logo */
+
+#navbar #logo {
+
+    /* height:22vh; */
+    position: relative;
+    margin: 0.9rem 1.8rem;
+
+
+}
+
+#navbar #logo h1 {
+
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+}
+
+/* To apply transparent navbar effect */
+#navbar::before {
+    content: " ";
+    /* background:linear-gradient((rgba(8, 1, 1,0.9),rgba(8, 1, 1,0.9)); */
+    background-color: #efd7d7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+/* Header Section */
+
+#container {
+    display: flex;
+    flex-direction: row;
+    /* border: 3px solid red; */
+    height: 97vh;
+    margin-bottom: 0.8rem;
+
+}
+
+#container::before {
+    content: " ";
+    background: linear-gradient(to bottom, rgb(42 47 48 / 50%), rgb(5 6 6 / 50%)), url(./images/sean-pollock-PhYq704ffdA-unsplash.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 104vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.98;
+
+}
+
+#container #header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* justify-content: center; */
+    max-width: 110rem;
+    margin: auto;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.4rem 1.1rem;
+
+}
+
+#container #header h1 {
+
+    color: white;
+    margin-bottom: 1rem;
+
+}
+
+#container #header p {
+
+    color: white;
+    margin-bottom: 1.6rem;
+    max-width: 73vw;
+
+}
+
+#container #header a {
+    padding: 1rem 1.3rem;
+
+}
+
+/* #container #header a:hover{
+
+
+    background-color:#93CB52;
+    color:black;
+    border:2px solid black;
+
+
+} */
+
+/* Featured Properties */
+#container-1 {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    max-width: 130rem;
+    /* align-items: center; */
+    margin: 0 auto;
+
+}
+
+#container-1>h1 {
+
+    font-size: 4rem;
+    position: relative;
+    top: 1.09rem;
+
+}
+
+#container-1 #properties {
+
+    /* border: 2px solid green; */
+    display: flex;
+    margin: 1rem 1.7rem;
+    padding: 0 1;
+    padding: 0 1.2rem;
+
+}
+
+
+/* Boxes styling */
+#container-1 #properties .box {
+
+    /* border: 2px solid purple; */
+    padding: 1.8rem 2.1rem;
+    margin: 1.8rem 1.5rem;
+    background-color: gainsboro;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    color: #222a2a;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+/* Boxes image styling */
+#container-1 #properties .box img {
+
+    border-radius: 1rem;
+    margin-top: 0.9rem;
+    margin-bottom: 1.6rem;
+    height: 33vh;
+    margin: 0 auto;
+    display: block;
+
+}
+
+#container-1 #properties .box:hover {
+
+    transform: translateY(-10px);
+    background-color: #c0cfdb;
+
+
+}
+
+/* Who We Are Section */
+
+#who {
+
+    display: flex;
+    border: 2px solid black;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    padding: 2rem 0.5rem;
+    background-color: #333;
+    color: white;
+    height: 87vh;
+    margin-top: -3rem;
+
+}
+
+
+#who div:first-child {
+
+    flex: 2
+}
+
+#who div:last-child {
+
+    flex: 1
+}
+
+#who .who-img {
+    background: url('./images/5469.jpg') no-repeat center center/cover;
+    height: 89vh;
+    margin-top: -3rem;
+    margin-left: -0.5rem;
+}
+
+
+
+/* Who content section */
+
+#who .who-cont {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 71vh;
+    position: relative;
+    top: -2rem;
+    padding: 1rem 2.2rem;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+#who .who-cont h1 {
+
+    font-size: 3.3rem;
+
+
+}
+
+#who .who-cont h2 {
+
+    margin-top: 3rem;
+    font-size: 2.3rem;
+
+
+}
+
+#who .who-cont ul {
+
+    margin-top: 1rem;
+
+
+}
+
+#who .who-cont ul li {
+
+    line-height: 2.4rem;
+    border-bottom: 2px dotted white;
+    margin-bottom: 0.3rem;
+
+}
+
+/* Contact Us Section Styling */
+
+#contact-us {
+
+
+    /* border: 2px solid black; */
+    display: flex;
+    margin-top: -11.2rem;
+    height: 87vh;
+    background-color: #1a7840;
+
+}
+
+#contact-us div:first-child {
+    flex: 1;
+
+}
+
+
+#contact-us div:last-child {
+
+    flex: 2;
+
+}
+
+
+#contact-us #contact-form {
+
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid red; */
+    height: 66vh;
+    margin-top: 12.2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0rem 1.8rem;
+    color: white
+}
+
+#contact-us #contact-form h2 {
+
+    text-align: left;
+    margin-left: 1.1rem;
+    font-size: 3.2rem;
+    margin-bottom: 2.6rem;
+
+}
+
+
+#contact-us #contact-form p {
+
+    margin-left: 1.1rem;
+
+}
+
+
+#contact-us #contact-form .form-group {
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+
+#contact-us #contact-form .form-group input {
+    width: 18vw;
+    padding: 0.45rem 0.7rem;
+    margin: 0.4rem 0.9rem;
+    border: 2px solid #040605;
+    font-family: 'Roboto';
+
+}
+
+#contact-us #contact-form .form-group textarea {
+
+    resize: none;
+    border: 2px solid #040605;
+    width: 18vw;
+    height: 15vh;
+    padding: 0.6rem 0.7rem;
+    margin: 0.4rem 0.9rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+
+}
+
+#contact-us #contact-form .form-group label {
+
+    margin: 0rem 0.9rem;
+
+}
+
+
+
+/* Map Styling */
+
+#contact-us #map {
+    margin-top: -11rem;
+
+}
+
+#contact-us #map iframe {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#footer {
+
+    background-color: rgb(31, 16, 16);
+    color: white;
+    font-family: 'Roboto';
+    padding: 0.8rem 0rem;
+
+}
+
+
+#footer p {
+
+    text-align: center;
+
+}
+
+
+/* Utility Classes */
+.span-1 {
+
+    color: #93CB52;
+
+}
+
+
+.h-primary {
+
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.h-secondary {
+
+
+    text-align: center;
+    margin-bottom: 1.1rem;
+    font-size: 2.88rem;
+    margin-top: 1.4rem;
+}
+
+
+
+
+
+
+.p-primary {
+
+    text-align: center;
+    font-size: 1.65rem;
+    line-height: 1.2;
+
+}
+
+
+.p-secondary {
+
+    text-align: center;
+    line-height: 1rem;
+    line-height: 2rem;
+
+}
+
+
+.btn {
+
+    text-decoration: none;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid white;
+    background-color: #221e1e;
+
+}
+
+.btn:hover {
+
+    background-color: #93CB52;
+    color: black;
+    border: 2px solid black;
+
+}
+
+
+.btn-1 {
+
+    width: 9vw;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: #221e1e;
+    color: white;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid white;
+
+}
+
+.btn-1:hover {
+
+
+    background-color: #343233;
+    color: white;
+    border: 2px solid #f11a1a;
+
+}
